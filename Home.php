@@ -13,7 +13,7 @@ class Home extends BaseController
     {
         $data = array(
             'nome' => $this->request->getVar('nome'),
-            'marca' => $this->request->getVar('marca'),
+            'laboratorio' => $this->request->getVar('laboratorio'),
             'preco' => $this->request->getVar('preco'),
             'descricao' => $this->request->getVar('descricao')
         );
