@@ -5,7 +5,7 @@
 foreach ($resultado as $row){
     echo "id:".$row['id']. "<br>";
     echo "nome:".$row['nome']."<br>";
-    echo "marca:".$row['marca']."<br>";
+    echo "laboratorio:".$row['laboratorio']."<br>";
     echo "preco".$row['preco']."<br>";
     echo "descricao".$row['descricao']."<br>";
     

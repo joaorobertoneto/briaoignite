@@ -20,14 +20,14 @@
 <form action="receba" method="post">
   <div class="form-group">
     <div class="col-md-4 mb-3">
-      <label for="marcaInputLabel">Nome:</label>
-      <input type="text" class="form-control" id="marcaInputLabel" name="nome">
+      <label for="laboratorioInputLabel">Nome:</label>
+      <input type="text" class="form-control" id="laboratorioInputLabel" name="nome">
     </div>
   </div>
   <div class="form-group">
     <div class="col-md-4 mb-3">
-      <label for="modeloInputLabel">marca:</label>
-      <input type="text" class="form-control" id="modeloInputLabel" name = "marca">
+      <label for="modeloInputLabel">laboratório:</label>
+      <input type="text" class="form-control" id="modeloInputLabel" name = "laboratorio">
     </div>
   </div>
   <div class="form-group">
