@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="header d-flex align-items-center justify-content-between px-5">
+                <div class="logo d-flex align-items-center">
+                    <div class="icon">
+                        <img src="Group 2.png">
+                    </div>
+                    <div class="nome ms-2">
+                        <h3>Pharmazen</h3>
+                    </div>
+                </div>
+                <div class="busca ms-auto">
+                    <form class="d-flex flex-nowrap" action="pesquisar.php" method="post">
+                        <input type="text" class="form-control form-cinza">
+                        <button class="btn roxo pesquisa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 13a6.47 6.47 0 0 0 3.845-1.258h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1A6.47 6.47 0 0 0 13 6.5 6.5 6.5 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13m0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="bloco">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1>Editar remédio</h1>
+                        <p>Lorem ipsum.</p>
+                    </div>
+
+                    <div class="col-md-4">
+
+                    </div>
+
+                    <div class="row mt-1">
+                        <div class="card-submit">
+                            
+                            <form action="receba" method="post">
+                                <div class="form-group">
+                                  <div class="col-md-4 mb-3">
+                                    <label class="fw-bold" for="marcaInputLabel">Nome:</label>
+                                    <input type="text" class="form-control" id="marcaInputLabel" name="nome">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-md-4 mb-3">
+                                    <label class="fw-bold" for="modeloInputLabel">Laboratório:</label>
+                                    <input type="text" class="form-control" id="modeloInputLabel" name = "laboratorio">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-md-4 mb-3">
+                                    <label class="fw-bold" for="KmInputLabel">Preço:</label>
+                                    <input type="number" class="form-control" id="KmInputLabel" name="preco">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-md-4 mb-3">
+                                   <label class="fw-bold" for="AnoInputLabel">Quantidade:</label>
+                                   <input type="text" class="form-control" id="AnoInputLabel" name="quantidade">
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn roxo py-2" name="submit">Adicionar produtos</button>
+                              </form>
+
+                            
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
