@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Caro</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: unset;
+}
+
+body {
+    background: rgb(255, 211, 243);
+    background: linear-gradient(180deg, rgba(255, 211, 243, 1) 0%, rgba(255, 219, 235, 1) 50%, rgba(213, 205, 255, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-rows: 8vh auto;
+        width:100%;
+   height: 951px;
+}
+
+.header{
+    background-color: #FFF8FF;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    margin: 0;
+}
+
+.bloco {
+    background-color: #FFF8FF;
+    border-radius: 3.625rem;
+    margin: 5rem 7rem;
+    padding: 3.6rem 3rem;
+}
+
+h1,
+h2,
+h3 {
+    color: #000;
+    font-family: Lato;
+    font-size: 2.75rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0;
+}
+
+
+.roxo,
+p,
+select {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #796C74;
+}
+
+.destaque {
+    color: #C98FFF;
+}
+
+.cinza{
+    color: #796C74;
+    font-size: 14px;
+}
+
+.roxo {
+    background-color: #C98FFF;
+    border: 0;
+    color: white;
+}
+
+.txt-sm{
+    font-size: 1rem;
+}
+a{
+    text-decoration:none ;
+    color: white;
+}
+.form-cinza{
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.pesquisa {
+    border-top-left-radius: 0 ;
+    border-bottom-left-radius: 0 ;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.roxo:hover,
+.roxo:active {
+    background-color: #AF71E9 !important;
+    border: 0;
+    color: white !important;
+}
+
+select {
+    display: block;
+    width: 100%
+}
+
+.card {
+    border-radius: 10px;
+    padding: 1rem;
+    min-width: 188px;
+    width: 40%;
+    height: auto;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.card-submit {
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+
+.card img {
+    margin: auto;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+table {
+    user-select: none;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+td {
+    padding-left: 2px;
+    font-size: 12px;
+}
+
+
+@media (max-width: 767px) {
+    .bloco {
+        margin: 3rem 3rem;
+        padding: 2rem 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+
+    }
+
+    .roxo,
+    p,
+    select {
+        font-size: 0.8rem;
+    }
+}
+    </style>
+</head>
+<body>
+      <h1>Remédio Mais Caro</h1>
+    <div class="temqueeditarisso">
+        <p><strong>Nome:</strong> <?= $produtos['nome'] ?></p>
+        <p><strong>Laboratório:</strong> <?= $produtos['laboratorio'] ?></p>
+        <p><strong>Quantidade:</strong> <?= $produtos['quantidade'] ?></p>
+        <p><strong>Preço:</strong> R$ <?= $produtos['preco'] ?></p>
+        <a href="/showForm">Voltar</a>
+    </div>
+    
+</body>
+</html>
