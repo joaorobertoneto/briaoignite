@@ -11,12 +11,12 @@ class Home extends BaseController
     }
     public function receba()
     {
-        $data = array(
+        $data = [
             'nome' => $this->request->getVar('nome'),
             'laboratorio' => $this->request->getVar('laboratorio'),
             'preco' => $this->request->getVar('preco'),
             'descricao' => $this->request->getVar('descricao')
-        );
+        ];
         
         //print_r($data);
 
@@ -33,4 +33,16 @@ class Home extends BaseController
         $dados['resultado'] = $my_model->findAll();
         return view ('/showForm',$dados);
     }
+ public function editar($id)
+    {
+        $model = new FarmaciaModel();
+        $data['produto'] = $model->find($id);
+
+        if (!$data['produto']) {
+            return redirect()->to('/produtos')->with('error', 'Remédio não encontrado.');
+        }
+
+        return view('/edit', $data);
+    }
+
 }
