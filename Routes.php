@@ -8,4 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->post('/receba', 'Home::receba');
 $routes->get('/showForm', 'Home::showForm');
-
+$routes->get('/edit/(:num)', 'Home::editar/$1');
