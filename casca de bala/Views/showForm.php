@@ -191,8 +191,6 @@
                 <div class="row">
                     <div class="col-md-8">
                         <h1>Disponível no Estoque</h1>
-                        <a href="expensive.php">Buscar mais Caro</a>
-                        <a href="quantity.php">Buscar mai    Quantidade</a>
 
                         <div class="mt-3">
                             <a href="http://localhost/ci4/public/">
@@ -201,8 +199,8 @@
                             <a href="http://localhost/ci4/public/expensive">
                                 <button class="btn roxo py-2">Remédio mais caro</button>
                             </a>
-                            <a href="http://localhost/ci4/public/most_quantity">
-                                <button class="btn roxo py-2">Remédio com maior quantidade</button>
+                            <a href="http://localhost/ci4/public/quantity">
+                                <button class="btn  roxo py-2">Remédio com maior quantidade</button>
                             </a>
                         </div>
                     </div>
